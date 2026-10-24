@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitInsight Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="FitInsight — workout log for iPhone with Apple Health.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one centred reading column, quiet header with three links; product colours from the app (midnight navy + sky blue). */
+:root {
+  --bg: #F3F6FA; --surface: #FFFFFF; --fg: #13213A; --muted: #4F5E77; --line: #D9E1EC;
+  --accent: #2C5C8C; --accent-soft: #E3EDF8; --mark: #FFF3C4;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0F1A2D; --surface: #17253D; --fg: #EEF2F8; --muted: #A9B6CB; --line: #2A3A56;
+  --accent: #94C9F5; --accent-soft: #1E3352; --mark: #4A3F12; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0F1A2D; --surface: #17253D; --fg: #EEF2F8; --muted: #A9B6CB; --line: #2A3A56;
+  --accent: #94C9F5; --accent-soft: #1E3352; --mark: #4A3F12; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; }
+header.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-block: 22px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+.brand svg { flex-shrink: 0; }
+nav.site { display: flex; gap: 18px; font-size: 16px; }
+nav.site a { color: var(--muted); text-decoration: none; }
+nav.site a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+main { padding-block: 36px 56px; display: flex; flex-direction: column; gap: 28px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 42px); letter-spacing: -0.02em; }
+h2 { font-size: 23px; margin-top: 12px; }
+h3 { font-size: 18px; }
+p, ul, ol { margin: 0; }
+ul, ol { padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; }
+section { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.lede { font-size: 19px; color: var(--muted); max-width: 60ch; }
+.meta { font-size: 15px; color: var(--muted); }
+.eyebrow { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.contact { font-family: var(--display); font-size: 20px; font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+.todo { background: var(--mark); padding: 0 4px; border-radius: 4px; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+summary { cursor: pointer; font-weight: 600; }
+details[open] summary { margin-bottom: 8px; }
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .features { grid-template-columns: minmax(0, 1fr); } }
+.toc { columns: 2; column-gap: 24px; font-size: 16px; }
+@media (max-width: 560px) { .toc { columns: 1; } }
+footer.site { border-top: 1px solid var(--line); padding-block: 22px 32px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+</style>
+</head>
+<body>
+<header class="site wrap"><a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="8" fill="var(--accent)"/><path d="M10 22V8h10M10 15h7" stroke="var(--bg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>FitInsight</a>
+<nav class="site" aria-label="Site"><a href="index.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<main class="wrap">
+<section>
+<p class="eyebrow">Privacy policy</p>
+<h1>How FitInsight handles your data</h1>
+<p class="meta">Effective October 24, 2026</p>
+<p class="lede">Short version: your training lives on your iPhone. Apple Health data is used only to show you your own statistics. Nothing is used for advertising, nothing is sold, and there are no tracking or analytics tools in the app. A cloud copy exists only if you create an account, and you can delete it in the app at any time.</p>
+</section>
+<section>
+<h2>At a glance</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Data</th><th>Where it is kept</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Workouts, sets, templates, body measurements you enter</td><td>On your iPhone; in the cloud only with an account</td><td>Your training log and statistics</td></tr>
+<tr><td>Apple Health data you allow (list below)</td><td>Read on your iPhone; daily summaries in the cloud only with an account</td><td>Statistics, heart-rate zones, recovery, body trends</td></tr>
+<tr><td>E-mail address and password</td><td>Cloud, only if you create an account</td><td>Signing in; password reset codes</td></tr>
+<tr><td>FitInsight Pro status</td><td>Apple; on your iPhone</td><td>Unlocking Pro features</td></tr>
+</tbody></table></div>
+</section>
+<section>
+<h2>1. Who is responsible</h2>
+<p>FitInsight is developed by Denis Fedotov, Russia (“we”). We are the controller of personal data processed through the optional FitInsight account. Contact: <span class="todo">support@[DOMAIN]</span>.</p>
+</section>
+<section>
+<h2>2. Data on your iPhone</h2>
+<p>Everything you log is stored in the app’s own storage on your iPhone: workouts, sets, cardio intervals, templates, body measurements, goals and settings. The app keeps daily backup copies in its folder, visible in the Files app. We cannot see this data. It is deleted when you delete the app.</p>
+</section>
+<section>
+<h2>3. Apple Health</h2>
+<p>With your permission, FitInsight reads: workouts, heart rate, resting heart rate, heart rate variability, sleep, steps, walking and cycling distance, active energy, blood oxygen, VO₂ max, weight, body fat, lean body mass, height, BMI, date of birth and biological sex. Date of birth, sex and height are used only to estimate maximum heart rate and body-composition norms.</p>
+<p>FitInsight writes finished strength workouts to Apple Health, so they count toward your Activity rings. You can switch this off in the app.</p>
+<p>Data from Apple Health is never used for advertising or marketing, never sold, and never shared with anyone, except that if you turn on cloud sync, the summaries listed in section 4 are stored with our hosting provider so you can restore them. You can change permissions at any time in the Health app → your profile → Apps → FitInsight.</p>
+</section>
+<section>
+<h2>4. Optional account and cloud sync</h2>
+<p>An account is not required to use FitInsight. If you create one, we process:</p>
+<ul>
+<li>your e-mail address and password (the password is stored only as a secure hash);</li>
+<li>your workouts with all sets and cardio intervals, templates and body measurements entered in the app;</li>
+<li>from Apple Health: weight and body-fat readings, a list of workouts (time, type, duration, distance, active energy), and per day: hours of sleep, resting heart rate and heart rate variability.</li>
+</ul>
+<p>Sync can be paused with “Sync automatically” or by signing out. The data is used only to keep your copy and restore it on another iPhone.</p>
+<p><b>Hosting provider.</b> The cloud runs on Supabase (Supabase Inc.), with the database in the European Union (Ireland, Amazon Web Services). Supabase processes the data on our behalf under a data processing agreement and may not use it for its own purposes. Data travels encrypted (TLS), and each account can read only its own records.</p>
+</section>
+<section>
+<h2>5. Purchases</h2>
+<p>FitInsight Pro is sold through the App Store. Apple handles payment, and we never receive your card details, name or address from Apple. The app checks with Apple whether Pro is active.</p>
+</section>
+<section>
+<h2>6. What we do not do</h2>
+<ul>
+<li>No advertising and no advertising identifiers.</li>
+<li>No analytics, tracking or third-party SDKs in the app.</li>
+<li>No selling or renting of personal data.</li>
+<li>No location, contacts, photos or microphone access.</li>
+</ul>
+<p>Notifications are local: the rest timer schedules them on your iPhone. If you allow it in iOS settings, Apple may share anonymous crash reports with us; these do not contain your training data.</p>
+</section>
+<section>
+<h2>7. Legal bases (EU and UK users)</h2>
+<p>We process health-related data on the basis of your explicit consent (GDPR Art. 9(2)(a)), which you give by granting Apple Health access and by turning on cloud sync. Account data is processed to provide the service you asked for (Art. 6(1)(b)). You can withdraw consent at any time by changing Health permissions, signing out or deleting the account.</p>
+</section>
+<section>
+<h2>8. How long we keep data</h2>
+<p>Cloud data is kept while your account exists. When you delete the account in the app, the account and all its cloud records are deleted immediately. Copies in the hosting provider’s backups are overwritten within 30 days. Data on your iPhone stays until you delete it or the app.</p>
+</section>
+<section>
+<h2>9. Your rights</h2>
+<p>You can access, correct, export and delete your data. Most of this is built in: the app shows and edits everything you logged, exports JSON (and CSV with Pro), and deletes the account and cloud data. For anything else, write to <span class="todo">support@[DOMAIN]</span>; we reply within 30 days. EU and UK residents may also complain to their local data protection authority. Residents of California and other US states have the same rights to know and to delete; we do not sell or share personal information for cross-context advertising.</p>
+</section>
+<section>
+<h2>10. Children</h2>
+<p>FitInsight is not intended for children under 16, and we do not knowingly collect their data. If you believe a child has created an account, contact us and we will delete it.</p>
+</section>
+<section>
+<h2>11. Changes</h2>
+<p>If this policy changes, we will update the date above and, for important changes, tell you in the app before they take effect.</p>
+</section>
+<section>
+<h2>12. Contact</h2>
+<div class="panel"><p class="contact"><span class="todo">support@[DOMAIN]</span></p><p class="meta">Denis Fedotov, Russia</p></div>
+</section>
+</main><footer class="site wrap"><span>FitInsight · iPhone workout log</span><span>Developer: Denis Fedotov · <span class="todo">support@[DOMAIN]</span></span></footer>
+</body>
+</html>

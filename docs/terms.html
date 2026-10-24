@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitInsight Terms of Use</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="FitInsight — workout log for iPhone with Apple Health.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one centred reading column, quiet header with three links; product colours from the app (midnight navy + sky blue). */
+:root {
+  --bg: #F3F6FA; --surface: #FFFFFF; --fg: #13213A; --muted: #4F5E77; --line: #D9E1EC;
+  --accent: #2C5C8C; --accent-soft: #E3EDF8; --mark: #FFF3C4;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0F1A2D; --surface: #17253D; --fg: #EEF2F8; --muted: #A9B6CB; --line: #2A3A56;
+  --accent: #94C9F5; --accent-soft: #1E3352; --mark: #4A3F12; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0F1A2D; --surface: #17253D; --fg: #EEF2F8; --muted: #A9B6CB; --line: #2A3A56;
+  --accent: #94C9F5; --accent-soft: #1E3352; --mark: #4A3F12; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; }
+header.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-block: 22px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+.brand svg { flex-shrink: 0; }
+nav.site { display: flex; gap: 18px; font-size: 16px; }
+nav.site a { color: var(--muted); text-decoration: none; }
+nav.site a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+main { padding-block: 36px 56px; display: flex; flex-direction: column; gap: 28px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 42px); letter-spacing: -0.02em; }
+h2 { font-size: 23px; margin-top: 12px; }
+h3 { font-size: 18px; }
+p, ul, ol { margin: 0; }
+ul, ol { padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; }
+section { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.lede { font-size: 19px; color: var(--muted); max-width: 60ch; }
+.meta { font-size: 15px; color: var(--muted); }
+.eyebrow { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.contact { font-family: var(--display); font-size: 20px; font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+.todo { background: var(--mark); padding: 0 4px; border-radius: 4px; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+summary { cursor: pointer; font-weight: 600; }
+details[open] summary { margin-bottom: 8px; }
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .features { grid-template-columns: minmax(0, 1fr); } }
+.toc { columns: 2; column-gap: 24px; font-size: 16px; }
+@media (max-width: 560px) { .toc { columns: 1; } }
+footer.site { border-top: 1px solid var(--line); padding-block: 22px 32px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+</style>
+</head>
+<body>
+<header class="site wrap"><a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="8" fill="var(--accent)"/><path d="M10 22V8h10M10 15h7" stroke="var(--bg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>FitInsight</a>
+<nav class="site" aria-label="Site"><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html" aria-current="page">Terms</a></nav></header>
+<main class="wrap">
+<section>
+<p class="eyebrow">Terms of use</p>
+<h1>FitInsight terms of use</h1>
+<p class="meta">Effective October 24, 2026</p>
+<p class="lede">These terms apply together with Apple’s Licensed Application End User License Agreement. Where they differ, Apple’s agreement governs your licence to use the app.</p>
+</section>
+<section>
+<h2>1. The app</h2>
+<p>FitInsight is a workout log and statistics app for iPhone, provided by Denis Fedotov (“we”). By using it you agree to these terms. You must be at least 16 years old.</p>
+</section>
+<section>
+<h2>2. Not medical advice</h2>
+<p>FitInsight shows trends and estimates calculated from your own data, such as estimated one-rep max, training load, readiness and body-composition norms. These are approximations, not medical measurements. FitInsight is not a medical device and does not diagnose, treat or prevent any condition. Consult a qualified professional before starting or changing a training programme. You train at your own risk.</p>
+</section>
+<section>
+<h2>3. Your account</h2>
+<p>An account is optional and is used for cloud sync. Keep your password private; you are responsible for activity in your account. You can delete the account at any time in the app (More → Account &amp; cloud → Delete account).</p>
+</section>
+<section>
+<h2>4. FitInsight Pro</h2>
+<ul>
+<li>Pro is offered as a monthly or yearly auto-renewable subscription and as a one-time lifetime purchase. Prices are shown in the app before you buy and may differ by country.</li>
+<li>Payment is charged to your Apple ID when you confirm the purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period; renewal is charged within 24 hours before that.</li>
+<li>If a free trial is offered, it turns into a paid subscription when it ends unless you cancel at least 24 hours before. Any unused part of a trial is forfeited when you buy a subscription.</li>
+<li>Manage or cancel in Settings → your name → Subscriptions. Refunds are handled by Apple under its policies.</li>
+<li>Features of the free version may change, but we will not remove data you created.</li>
+</ul>
+</section>
+<section>
+<h2>5. Your content</h2>
+<p>Your workouts and measurements belong to you. You allow us to store and process them only to provide the app and the cloud sync you turn on. How we handle data is described in the <a href="privacy.html">privacy policy</a>.</p>
+</section>
+<section>
+<h2>6. Acceptable use</h2>
+<p>Do not misuse the service: no attempts to access other users’ data, disrupt the servers, or reverse-engineer the cloud service. We may suspend accounts that do.</p>
+</section>
+<section>
+<h2>7. Exercise illustrations</h2>
+<p>Exercise drawings are from the Everkinetic project, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Exercise descriptions are based on Free Exercise DB (public domain).</p>
+</section>
+<section>
+<h2>8. Availability and liability</h2>
+<p>We work to keep FitInsight reliable but provide it “as is”, without guarantees that it will be error-free or always available. Keep the built-in backups. To the extent permitted by law, we are not liable for indirect or consequential losses, and our total liability is limited to the amount you paid for FitInsight Pro in the 12 months before the claim. Nothing here limits rights you have as a consumer under mandatory law.</p>
+</section>
+<section>
+<h2>9. Changes and ending</h2>
+<p>We may update these terms; the date above will change and important changes will be announced in the app. You may stop using FitInsight at any time by deleting the app and, if you have one, your account.</p>
+</section>
+<section>
+<h2>10. Law and contact</h2>
+<p>These terms are governed by the law of Russia, without depriving you of protection given by the law of the country where you live. Questions: <span class="todo">support@[DOMAIN]</span>.</p>
+</section>
+</main><footer class="site wrap"><span>FitInsight · iPhone workout log</span><span>Developer: Denis Fedotov · <span class="todo">support@[DOMAIN]</span></span></footer>
+</body>
+</html>

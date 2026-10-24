@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitInsight Support</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="FitInsight — workout log for iPhone with Apple Health.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one centred reading column, quiet header with three links; product colours from the app (midnight navy + sky blue). */
+:root {
+  --bg: #F3F6FA; --surface: #FFFFFF; --fg: #13213A; --muted: #4F5E77; --line: #D9E1EC;
+  --accent: #2C5C8C; --accent-soft: #E3EDF8; --mark: #FFF3C4;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0F1A2D; --surface: #17253D; --fg: #EEF2F8; --muted: #A9B6CB; --line: #2A3A56;
+  --accent: #94C9F5; --accent-soft: #1E3352; --mark: #4A3F12; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0F1A2D; --surface: #17253D; --fg: #EEF2F8; --muted: #A9B6CB; --line: #2A3A56;
+  --accent: #94C9F5; --accent-soft: #1E3352; --mark: #4A3F12; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; }
+header.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-block: 22px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+.brand svg { flex-shrink: 0; }
+nav.site { display: flex; gap: 18px; font-size: 16px; }
+nav.site a { color: var(--muted); text-decoration: none; }
+nav.site a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+main { padding-block: 36px 56px; display: flex; flex-direction: column; gap: 28px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 42px); letter-spacing: -0.02em; }
+h2 { font-size: 23px; margin-top: 12px; }
+h3 { font-size: 18px; }
+p, ul, ol { margin: 0; }
+ul, ol { padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; }
+section { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.lede { font-size: 19px; color: var(--muted); max-width: 60ch; }
+.meta { font-size: 15px; color: var(--muted); }
+.eyebrow { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.contact { font-family: var(--display); font-size: 20px; font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+.todo { background: var(--mark); padding: 0 4px; border-radius: 4px; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+summary { cursor: pointer; font-weight: 600; }
+details[open] summary { margin-bottom: 8px; }
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .features { grid-template-columns: minmax(0, 1fr); } }
+.toc { columns: 2; column-gap: 24px; font-size: 16px; }
+@media (max-width: 560px) { .toc { columns: 1; } }
+footer.site { border-top: 1px solid var(--line); padding-block: 22px 32px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+</style>
+</head>
+<body>
+<header class="site wrap"><a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="8" fill="var(--accent)"/><path d="M10 22V8h10M10 15h7" stroke="var(--bg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>FitInsight</a>
+<nav class="site" aria-label="Site"><a href="index.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<main class="wrap">
+<section>
+<p class="eyebrow">iPhone app · coming to the App Store</p>
+<h1>FitInsight support</h1>
+<p class="lede">FitInsight is a workout log for iPhone. It records strength and cardio sessions, reads Apple Health, and shows how your strength, body and recovery change from week to week.</p>
+</section>
+<div class="features">
+<div class="panel"><h3>Fast logging</h3><p>Last weights are filled in, and the rest timer starts when you tick a set.</p></div>
+<div class="panel"><h3>Apple Health</h3><p>Apple Watch workouts, sleep, heart rate and smart-scale readings in one place.</p></div>
+<div class="panel"><h3>Your data</h3><p>Stored on your iPhone. A cloud copy exists only if you create an account.</p></div>
+</div>
+<section>
+<h2>Contact</h2>
+<div class="panel">
+<p>Questions, bugs, data requests:</p>
+<p class="contact"><span class="todo">support@[DOMAIN]</span></p>
+<p class="meta">We usually reply within 3 working days. Please include your iPhone model, iOS version and the app version from More → App version.</p>
+</div>
+</section>
+<section>
+<h2>Frequently asked questions</h2>
+<details><summary>I forgot my password</summary><p>On the sign-in screen tap <b>Forgot password?</b>, enter your e-mail and tap <b>Send code</b>. Enter the code from the e-mail together with a new password. If the e-mail does not arrive within a few minutes, check the spam folder.</p></details>
+<details><summary>How do I delete my account?</summary><p>In the app: <b>More → Account &amp; cloud → Delete account</b>. The account and everything stored in the cloud are deleted at once. Workouts on your iPhone stay until you delete the app. If you can no longer open the app, write to <span class="todo">support@[DOMAIN]</span> from the e-mail address of the account.</p></details>
+<details><summary>Where are my workouts stored?</summary><p>On your iPhone. If you create an account and use cloud sync, a copy is kept on servers in the European Union so you can restore it on a new iPhone. Details are in the <a href="privacy.html">privacy policy</a>.</p></details>
+<details><summary>FitInsight does not see my Apple Watch workouts or sleep</summary><p>Open the Health app → your profile → <b>Apps</b> → <b>FitInsight</b> and turn on the data types you want to share. iOS does not tell apps which types were declined, so a missing type shows up as “no data”.</p></details>
+<details><summary>How do I cancel FitInsight Pro?</summary><p>Subscriptions are billed and managed by Apple. Open <b>Settings → your name → Subscriptions → FitInsight</b> and tap <b>Cancel Subscription</b> at least 24 hours before the renewal date. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+<details><summary>I got a new iPhone</summary><p>Install FitInsight, sign in to the same account and tap <b>More → Account &amp; cloud → Download from the cloud</b> (cloud sync is part of FitInsight Pro). Without an account, move the daily backup from the Files app and restore it in <b>More → Data &amp; Backup</b>. A FitInsight Pro purchase is linked to your Apple ID and is restored on any device with that Apple ID.</p></details>
+<details><summary>Can I export my data?</summary><p>Yes. <b>More → Data &amp; Backup</b> creates a JSON report of your history, and FitInsight Pro adds CSV tables for Excel or Numbers. Daily backups are also visible in the Files app under On My iPhone → FitInsight.</p></details>
+</section>
+<section>
+<h2>Medical note</h2>
+<p>FitInsight shows trends and estimates from your own data. It is not a medical device and does not diagnose or treat anything. Talk to a doctor before starting a new training programme, especially if you have a health condition.</p>
+</section>
+</main><footer class="site wrap"><span>FitInsight · iPhone workout log</span><span>Developer: Denis Fedotov · <span class="todo">support@[DOMAIN]</span></span></footer>
+</body>
+</html>
